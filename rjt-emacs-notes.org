@@ -1,0 +1,5 @@
+* Kdb Bindings
+** Bookmarks
+*** C-x p m   - Bookmark 
+*** C-x j j      - Jump to bookmark
+*** C-x r l      - list bookmarks

@@ -8,6 +8,10 @@
    kept-old-versions 2
    version-control t)       ; use versioned backups
 
+;; Turn off the toolbar
+(tool-bar-mode -1)
+
+
 ;; Load el-get to manage the packages.
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
@@ -59,6 +63,14 @@
       (append
        '(cl-lib  ;; Packages that do not require local config.
 	 autopep8
+	 bookmark+
+	 bookmark+-mac
+	 bookmark+-bmu
+	 bookmark+-1
+	 bookmark+-key
+	 bookmark+-lit
+	 bookmark+-doc
+	 bookmark+-chg
 	 ctable
 	 dash
 	 deferred
@@ -79,6 +91,8 @@
 (el-get-cleanup my-packages)
 (el-get 'sync my-packages)
 
+(require 'bookmark+)
+
 ;; Prepackaged mode config.
 (show-paren-mode 1)
 (require 'ido) (ido-mode t)
@@ -90,7 +104,22 @@
                       (setq indent-tabs-mode nil
                             tab-width 4
 			    python-indent 4))))
-
+;; get rid of `find-file-read-only' and replace it with something
+;; more useful.
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+ 
+;; enable recent files mode.
+(recentf-mode t)
+ 
+; 50 files ought to be enough.
+(setq recentf-max-saved-items 50)
+ 
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
 
 (setq custom-file "~/.emacs.d/rjt-custom.el")
 (load custom-file)
