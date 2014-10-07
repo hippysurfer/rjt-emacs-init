@@ -28,6 +28,10 @@
 
 	(:name jedi
 	 :after (add-hook 'python-mode-hook 'jedi:setup))
+
+	(:name one-key
+         :after (global-set-key (kbd "<f1>") 'one-key-open-associated-menu-set))
+
 	))
 
 
@@ -41,6 +45,8 @@
 	 el-get
 	 epc
 	 epl
+	 hexrgb ;; required by one-key
+	 one-key-local
 	 f
 	 fuzzy
 	 package
@@ -52,6 +58,8 @@
 
 (el-get-cleanup my-packages)
 (el-get 'sync my-packages)
+
+(require 'one-key)
 
 ;; Prepackaged mode config.
 (show-paren-mode 1)
