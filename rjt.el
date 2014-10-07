@@ -42,6 +42,9 @@
 	(:name projectile
 	 :after (projectile-global-mode))
 
+	(:name expand-region
+	 :after (global-set-key (kbd "C-=") 'er/expand-region))
+
 	))
 
 
