@@ -1,0 +1,6 @@
+/el-get
+/auto-save-list
+.*
+!.gitignore
+ac-comphist.dat
+*~
