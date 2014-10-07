@@ -1,3 +1,13 @@
+;; Put backup files away from the projects.
+(setq
+   backup-by-copying t      ; don't clobber symlinks
+   backup-directory-alist
+    '(("." . "~/.emacs-saves"))    ; don't litter my fs tree
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)       ; use versioned backups
+
 ;; Load el-get to manage the packages.
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
@@ -29,6 +39,9 @@
 	(:name jedi
 	 :after (add-hook 'python-mode-hook 'jedi:setup))
 
+	(:name projectile
+	 :after (projectile-global-mode))
+
 	))
 
 
@@ -44,6 +57,7 @@
 	 epl
 	 hexrgb ;; required by one-key
 	 f
+	 flx ;; required by projectile
 	 fuzzy
 	 package
 	 pkg-info
