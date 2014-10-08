@@ -3,3 +3,7 @@
 *** C-x p m   - Bookmark 
 *** C-x j j      - Jump to bookmark
 *** C-x r l      - list bookmarks
+** Projectile
+*** C-c p f      - find file
+*** C-c p k      - kill buffers
+*** C-c p s g    - grep
