@@ -92,6 +92,7 @@
 (el-get 'sync my-packages)
 
 (require 'bookmark+)
+(setq bookmark-default-file "~/.emacs.d/rjt-bookmarks.el")
 
 ;; Prepackaged mode config.
 (show-paren-mode 1)

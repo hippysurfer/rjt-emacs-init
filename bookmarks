@@ -1,0 +1,17 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(#1=(#("Emacs Notes" 0 11
+      (bmkp-full-record #1#))
+    (filename . "~/.emacs.d/rjt-emacs-notes.org")
+    (buffer-name . "rjt-emacs-notes.org")
+    (front-context-string . "\n*** C-x p m   -")
+    (rear-context-string . "ngs\n** Bookmarks")
+    (front-context-region-string)
+    (rear-context-region-string)
+    (visits . 1)
+    (time 21556 9772 701189 0)
+    (created 21556 9751 77288 0)
+    (position . 28))
+)
