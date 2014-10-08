@@ -11,6 +11,8 @@
 ;; Turn off the toolbar
 (tool-bar-mode -1)
 
+;; Load the notes as the initial buffer
+(setq initial-buffer-choice "~/.emacs.d/rjt-emacs-notes.org")
 
 ;; Load el-get to manage the packages.
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
