@@ -16,6 +16,12 @@ Goto line                   M-g g
 Move forward one setence    M-e
 Move forward one setence    M-a
 
+** Whitespace Edits
+   -- Shift a block right or left C-x  S-TAB
+-- Fill (justify) paragraph         M-q
+-- Open a new line before this one  C-o
+-- Remove all but 1 empty line      C-x C-o
+-- Remove all but 1 space           M-SPC
 ** Bookmarks
 - Bookmark            C-x p m   
 - Jump to bookmark    C-x j j   
@@ -32,6 +38,20 @@ Move forward one setence    M-a
 - mark prev like this C-<
 - mark all like this  C-c C-<
 
+** Getting Help
+- Tutorial                C-h t
+- Describe key            C-h k
+- Manual for key          C-h K
+- Key binding for command C-h w
+- Describe function       C-h f
+- Manual for function     C-h F
+- Commands that match     C-h a
+- Manual for lisp symbol  C-h d
+- Describe mode           C-h m
+- Describe bindings       C-h b
+- Info manual             C-h i
+- History                 C-h l
+- Describe variable       C-h v
 ** Org mode reference card
   
 *** Getting Started
