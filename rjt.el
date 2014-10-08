@@ -65,8 +65,8 @@
 		  (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 		  (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 		  (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)			   
-		  ))
-	))
+		  )))
+      )
 
 
 (setq my-packages
@@ -95,7 +95,9 @@
 	 pkg-info
 	 popup
 	 python-environment
-	 s)
+	 pyvenv
+	 s
+	 yasnippet)
        (mapcar 'el-get-source-name el-get-sources)))
 
 (el-get-cleanup my-packages)
@@ -131,6 +133,7 @@
   (if (find-file (ido-completing-read "Find recent file: " recentf-list))
       (message "Opening file...")
     (message "Aborting")))
+
 
 (setq custom-file "~/.emacs.d/rjt-custom.el")
 (load custom-file)
