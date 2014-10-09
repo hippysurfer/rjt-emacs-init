@@ -32,7 +32,7 @@ Move forward one setence    M-a
 - kill buffer         C-c p k   
 - grep                C-c p s g 
 - switch project      C-c p p   
- 
+
 ** Multiple Cursors
 - mark next like this C->
 - mark prev like this C-<

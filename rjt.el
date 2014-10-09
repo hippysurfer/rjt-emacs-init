@@ -75,6 +75,7 @@
 (setq my-packages
       (append
        '(cl-lib  ;; Packages that do not require local config.
+	 autopep8
 	 bookmark+
 	 bookmark+-mac
 	 bookmark+-bmu
@@ -103,6 +104,8 @@
 	 yasnippet
 	 yasnippets
 	 yasnippet-snippets)
+	 s
+	 yasnippet)
        (mapcar 'el-get-source-name el-get-sources)))
 
 (el-get-cleanup my-packages)
