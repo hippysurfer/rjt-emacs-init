@@ -100,11 +100,9 @@
 	 python-environment
 	 pyvenv
 	 pydoc-info
-	 s
 	 yasnippet
 	 yasnippets
-	 yasnippet-snippets)
-	 s
+	 yasnippet-snippets
 	 yasnippet)
        (mapcar 'el-get-source-name el-get-sources)))
 
@@ -135,9 +133,9 @@
             (local-set-key "\C-cm" 'pytest-module)
             (local-set-key "\C-c." 'pytest-one)
             (local-set-key "\C-cd" 'pytest-directory)
-            (local-set-key "\C-cpa" 'pytest-pdb-all)
-            (local-set-key "\C-cpm" 'pytest-pdb-module)
-            (local-set-key "\C-cp." 'pytest-pdb-one)))
+            (local-set-key "\C-cta" 'pytest-pdb-all)
+            (local-set-key "\C-ctm" 'pytest-pdb-module)
+            (local-set-key "\C-ct." 'pytest-pdb-one)))
 
 (setq python-indent 4)
 (add-hook 'python-mode-hook
