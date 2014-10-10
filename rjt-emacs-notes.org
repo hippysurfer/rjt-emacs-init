@@ -1,27 +1,26 @@
 * Kdb Bindings
 
 ** Movement
-Move to beginning of line   C-a
-Move to end of line         C-e
-Move forward one character  C-f
-Move backward one character C-b
-Move forward one word       M-f
-Move backward one word      M-b
-Move down a line            C-n
-Move up a line              C-p
-Move to left and centre     M-r
-Move to top of buffer       M-<
-Move to end of buffer       M->
-Goto line                   M-g g
-Move forward one setence    M-e
-Move forward one setence    M-a
-
+- Move to beginning of line   C-a
+- Move to end of line         C-e
+- Move forward one character  C-f
+- Move backward one character C-b
+- Move forward one word       M-f
+- Move backward one word      M-b
+- Move down a line            C-n
+- Move up a line              C-p
+- Move to left and centre     M-r
+- Move to top of buffer       M-<
+- Move to end of buffer       M->
+- Goto line                   M-g g
+- Move forward one setence    M-e
+- Move forward one setence    M-a
 ** Whitespace Edits
-   -- Shift a block right or left C-x  S-TAB
--- Fill (justify) paragraph         M-q
--- Open a new line before this one  C-o
--- Remove all but 1 empty line      C-x C-o
--- Remove all but 1 space           M-SPC
+- Shift a block right or left C-x  S-TAB
+- Fill (justify) paragraph         M-q
+- Open a new line before this one  C-o
+- Remove all but 1 empty line      C-x C-o
+- Remove all but 1 space           M-SPC
 ** Bookmarks
 - Bookmark            C-x p m   
 - Jump to bookmark    C-x j j   

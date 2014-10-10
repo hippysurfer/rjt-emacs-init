@@ -24,6 +24,7 @@
   (setq eshell-review-quick-commands nil)
   (setq eshell-smart-space-goes-to-end t)
 
+;;(add-to-list 'exec-path "/usr/local/bin")
 
 ;; Load el-get to manage the packages.
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
